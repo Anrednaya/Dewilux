@@ -1,0 +1,28 @@
+// ================ОБЩИЕ СТИЛИ=================//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+
+  font-size: 62.5%; //10px
+
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+
+  // сюда добавится шрифт //
+}
+
+a {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
