@@ -1,11 +1,11 @@
-@import "normalize";
-@import "fonts";
-@import "vars";
-@import "templates";
+@import "../sass/normalize";
+@import "../sass/fonts";
+@import "../sass/vars";
+@import "../sass/templates";
 
-@import "header";
-@import "main";   
+@import "../sass/components/header";
+@import "../sass/components/main";
 
 //по аналогии сюда нужно будет добавить свои части
 
-@import "footer";
+@import "../sass/components/main";

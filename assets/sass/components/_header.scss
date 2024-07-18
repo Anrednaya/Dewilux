@@ -1,0 +1,15 @@
+.header {
+  padding: 0 $global-side-padding;
+}
+
+.navbar-toggler-icon {
+  width: 28px;
+  height: 28px;
+  background-image: url(../icons/menu.svg);
+}
+
+.header__icon-home {
+  width: 34px;
+  height: 48px;
+  padding-bottom: 5px;
+}

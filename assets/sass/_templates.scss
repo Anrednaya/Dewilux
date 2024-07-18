@@ -24,9 +24,23 @@ a {
   color: inherit;
 }
 
+// ================СТИЛИ ЛОГОТИПА=================//
+.logo {
+  width: 120px;
+  height: 25px;
+}
+
 //Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
 %container {
-  max-width: 1320px;
+  max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1320px;
+  }
 }
