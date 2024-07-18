@@ -8,15 +8,12 @@
 
 html {
   height: 100%;
-
   font-size: 62.5%; //10px
-
   scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
-
   // сюда добавится шрифт //
 }
 
@@ -25,4 +22,11 @@ a {
   font-style: normal;
   text-decoration: none;
   color: inherit;
+}
+
+//Шаблон для ограничения контента, добавлять к стилям командой @extend %container;
+%container {
+  max-width: 1320px;
+  min-width: 320px;
+  margin: 0 auto;
 }
