@@ -83,14 +83,14 @@
     opacity: 0;
     visibility: hidden;
 
-    background-color: #ff0016;
-
     transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 
   .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
+
+    background-color: #ff0016;
   }
 
   .dropdown-item {
