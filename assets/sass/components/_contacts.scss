@@ -14,10 +14,12 @@ header {
     padding-bottom: 5px;}
 
 
-    .main {
+    .main  {
         background-color: #F5F5F5;
     }
-
+    .main__container {
+        // margin: 0 317px 0 317px;
+    }
     .main__logo {
         max-width: 100%;
         min-width: 320px;
@@ -25,8 +27,8 @@ header {
     }
 
     .main__nav {
-        margin-top: 58px;
-        margin-bottom: 94px;
+        margin-top: 54px;
+        margin-bottom: 54px;
 
     }
     .main__title {
@@ -37,9 +39,15 @@ header {
     }
     .breadcrumb-item {
         font-weight: 700;
+        font-size: 3em;
     }
+    
     .main__contacts {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 54px;
     }
     .main__contacts__element {
         display: flex;
@@ -47,10 +55,15 @@ header {
         background-color: #ffffff;
         width: 373px;
         height: 265px;
-        border-radius: 15px 0px 0px 0px;
+        border-radius: 15px;
         padding: 51px;     
-        margin-top: 5px;
+        margin: 15px 0 0 0;
+        font-size: 3em;
     }
     .main__contacts__element-num, .main__contacts__element-email {
         font-weight: 600;
     }
+  .main__container-elements {
+    // --bs-gutter-x: 15rem;
+  }
+    
