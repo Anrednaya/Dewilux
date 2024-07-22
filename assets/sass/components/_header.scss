@@ -7,19 +7,20 @@
   z-index: 1000;
   padding: 0 $global-side-padding;
 
-  font-size: 2.6em;
+  font-size: 2.2em;
 
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.12);
 
-  .header__home {
+  .header__home-link {
+    padding: 0;
     transition: 0.3s;
   }
 
-  .header__home:hover {
+  .header__home-link:hover {
     transform: scale(1.05);
   }
 
-  .header__icon-home {
+  .header__home-icon {
     width: 34px;
     height: 48px;
     padding-bottom: 5px;
@@ -30,58 +31,86 @@
   }
 }
 
-.navbar-toggler-icon {
-  width: 28px;
-  height: 28px;
-  background-image: url(../icons/menu.svg);
+.navbar {
+  padding: 0;
+
+  .navbar-toggler-icon {
+    width: 28px;
+    height: 28px;
+    background-image: url(../icons/menu.svg);
+  }
 }
 
-.navbar-nav {
+.dropdown-item {
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 767px) {
+  .dropdown-menu {
+    display: block;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .nav-item {
+    padding: 15px 10px;
     margin-right: 2vw;
+
+    transition: background-color 0.2s ease;
   }
 
-  .nav-link:hover {
-    color: #ff0016;
+  .nav-item:hover {
+    color: white;
+    background-color: #ff0016;
   }
 
-  .nav-link.show {
-    color: #ff0016;
+  .dropdown-menu {
+    display: block;
+    top: 100%;
+    left: auto;
+    right: 0;
+    margin-top: 0;
+    width: 270px;
+
+    border: none;
+    border-radius: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    background-color: #ff0016;
+
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-item {
+    padding: 10px 15px;
+
+    color: #fff;
+  }
+
+  .dropdown-item:hover {
+    color: #fff;
+    background-color: #ec0518;
   }
 }
 
-// .header__dropdowm-menu {
-//   display: block;
-//   position: absolute;
-//   top: 50px;
-// }
+@media screen and (min-width: 1025px) {
+  .header {
+    font-size: 2.6em;
+  }
 
-// .dropdown-menu[data-bs-popper] {
-//   display: block;
-//   position: absolute;
-//   top: 50px;
-//   margin-top: 0;
-// }
-
-// .dropdown-menu {
-//   top: -50px;
-//   padding: 15px 0;
-//   width: 260px;
-//   border: none;
-//   background-color: #ff0016;
-// }
-
-// .dropdown-menu.show {
-//   margin-top: 12px;
-// }
-
-// .dropdown-item {
-//   padding: 8px 25px;
-//   font-size: 2em;
-//   color: #fff;
-// }
-
-// .dropdown-item:hover {
-//   background-color: #ec0518;
-//   color: #fff;
-// }
+  .dropdown-item {
+    font-size: 2em;
+  }
+}
