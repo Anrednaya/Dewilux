@@ -1,0 +1,37 @@
+.header {
+    padding: 0 $global-side-padding;
+  }
+  
+  .navbar-toggler-icon {
+    width: 28px;
+    height: 28px;
+    background-image: url(../icons/menu.svg);
+  }
+  
+  .header__icon-home {
+    width: 34px;
+    height: 48px;
+    padding-bottom: 5px;}
+    
+
+    .main {
+        background-color: #F5F5F5;
+    }
+
+    .main__logo {
+        max-width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
+    }
+
+    .main__nav {
+        margin-top: 58px;
+        margin-bottom: 94px;
+
+    }
+    .main__title {
+        margin-bottom: 5px;
+    }
+    .main__paragraph {
+        margin-bottom: 51px;
+    }
