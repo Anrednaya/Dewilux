@@ -14,7 +14,10 @@ html {
 
 body {
   height: 100%;
-  // сюда добавится шрифт //
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $gray;
 }
 
 a {
