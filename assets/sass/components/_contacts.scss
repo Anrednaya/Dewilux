@@ -27,7 +27,7 @@ header {
         min-width: 320px;
         margin: 0 auto;
     }
-
+    
     .main__nav {
         margin: 54px 0 54px ;
     }
@@ -40,6 +40,10 @@ header {
     .breadcrumb-item {
         font-weight: 700;
         font-size: 3em;
+    }
+    .breadcrumb-item:hover {
+        color: #dc3545;
+        font-size: 3.1em;
     }
     
     .main__contacts {
@@ -61,6 +65,13 @@ header {
     }
     .main__contacts__element {
         box-shadow: 10px 10px 10px  #00000040;
+    }
+    .main__contacts__element-num:hover {
+        color: #dc3545;
+        font-size: 1.1em;
+    }
+    .main__contacts__element-email:hover {
+        color: #dc3545;
     }
     .main__contacts__element-num, .main__contacts__element-email {
         font-weight: 600;
