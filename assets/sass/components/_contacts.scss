@@ -8,7 +8,7 @@ header {
     background-image: url(../icons/menu.svg);
   }
 
-  .header__icon-home {
+  .header__icon {
     width: 34px;
     height: 48px;
     padding-bottom: 5px;}
@@ -38,20 +38,21 @@ header {
         margin-bottom: 51px;
     }
     .breadcrumb-item {
-        font-weight: 700;
         font-size: 3em;
+        display: inline-block;
+        width: 25%;
+        padding: .8em 0;
+        text-align: center; 
+        transition: 1s;
     }
     .breadcrumb-item:hover {
         color: #dc3545;
-        font-size: 3.1em;
-        // transition: 0.4s;
-        transform: scale(1.25);
+
     }
     
     .main__contacts {
         display: flex;
         flex-wrap: wrap;
-        
         gap: 54px;
     }
     .main__contacts__element {
@@ -66,15 +67,28 @@ header {
         font-size: 3em;
     }
     .main__contacts__element {
-        box-shadow: 10px 10px 10px  #00000040;
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.5);
+        
+    }
+    .main__contacts__element-num {
+        transition: 1s;
+    }
+    .main__contacts__element-email {
+        transition: 1s;
     }
     .main__contacts__element-num:hover {
         color: #dc3545;
-        font-size: 1.1em;
-        transition: 0.4s;
+        // font-size: 1.1em;
+        // transition: 0.4s;
+        // font-weight: bold;
+        transform: scale(1.2);
+        padding-left: 20px;
+        
     }
     .main__contacts__element-email:hover {
         color: #dc3545;
+        transform: scale(1.2);
+        padding-left: 20px;
     }
     .main__contacts__element-num, .main__contacts__element-email {
         font-weight: 600;
@@ -89,6 +103,7 @@ header {
     .map__google-map {
         width:  100%; 
         margin-bottom: 97px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     }
     .map__text {
         font-family: Source Sans 3;
