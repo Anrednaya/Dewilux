@@ -44,6 +44,8 @@ header {
     .breadcrumb-item:hover {
         color: #dc3545;
         font-size: 3.1em;
+        // transition: 0.4s;
+        transform: scale(1.25);
     }
     
     .main__contacts {
@@ -69,6 +71,7 @@ header {
     .main__contacts__element-num:hover {
         color: #dc3545;
         font-size: 1.1em;
+        transition: 0.4s;
     }
     .main__contacts__element-email:hover {
         color: #dc3545;
