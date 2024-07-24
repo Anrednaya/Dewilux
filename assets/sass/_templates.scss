@@ -38,6 +38,7 @@ a {
   max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
+  padding: 0 15px;
 
   @media screen and (min-width: 1200px) {
     max-width: 1140px;
@@ -45,5 +46,9 @@ a {
 
   @media screen and (min-width: 1400px) {
     max-width: 1320px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 10px;
   }
 }
