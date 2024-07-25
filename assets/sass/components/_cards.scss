@@ -36,3 +36,31 @@
     height: 130px;
     overflow: hidden;
 }
+
+.product__btn {
+    background-color: $accent-red;
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 300;
+    height:90px;
+}
+
+.product__btn-container {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.product__btn-link {
+    display: inline-block;
+}
+
+.product__btn b {
+    display: inline-block;
+    padding-top: 17px;
+}
+
+@media (min-width:1400px) {
+    .product__product-details {
+        padding-top:25px;
+    }
+}
