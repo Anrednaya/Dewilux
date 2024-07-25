@@ -1,17 +1,4 @@
-header {
-    padding: 0 $global-side-padding;
-  }
 
-  .navbar-toggler-icon {
-    width: 28px;
-    height: 28px;
-    background-image: url(../icons/menu.svg);
-  }
-
-  .header__icon {
-    width: 34px;
-    height: 48px;
-    padding-bottom: 5px;}
 
 
     .main__container  {
@@ -23,6 +10,7 @@ header {
     }
     
     .main__logo {
+        display: block;
         max-width: 100%;
         min-width: 320px;
         margin: 0 auto;
@@ -45,46 +33,39 @@ header {
         color: #dc3545;
 
     }
-    
+   
     .main__contacts {
         display: flex;
-        flex-wrap: wrap;
-        gap: 54px;
+        justify-content: center;
     }
     .main__contacts__element {
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
-        width: 373px;
-        height: 265px;
+        width: 100%;
         border-radius: 15px;
-        padding: 51px;     
-        margin: 10px 0 0 0;
+        padding: 30px 0 30px 0;     
         font-size: 3em;
     }
     .main__contacts__element {
         box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.5);
-        
+        margin-top: 15px;
+        text-align: center;
     }
     .main__contacts__element-num {
         transition: 1s;
+        padding-bottom: 15px;
     }
     .main__contacts__element-email {
         transition: 1s;
     }
     .main__contacts__element-num:hover {
         color: #dc3545;
-        // font-size: 1.1em;
-        // transition: 0.4s;
-        // font-weight: bold;
         transform: scale(1.2);
-        padding-left: 20px;
-        
     }
     .main__contacts__element-email:hover {
         color: #dc3545;
         transform: scale(1.2);
-        padding-left: 20px;
     }
     .main__contacts__element-num, .main__contacts__element-email {
         font-weight: 600;
@@ -94,38 +75,92 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         
     }
+
+    .main__elements {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 0 40px  0 40px;
+    }
     .map__google-map {
-        width:  100%; 
         margin-bottom: 97px;
         box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        min-height: 260px;
     }
     .map__text {
-        font-family: Source Sans 3;
         font-size: 30px;
-        font-weight: 600;
-        line-height: 38.4px;
-        margin: 85px 0 28px 0;
+        font-weight: 400;
+        line-height: 38px;
+        margin: 68px 0 68px 0;
+    }
+    .main__button {
+        display: none;
     }
 
-    @media screen and (max-width: 1200px) {
+    .main__button__text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .main__button {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 15px;
+        padding: 51px;     
+        font-size: 3em;
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .main__button__btn {
+        width: 10em;
+        line-height: 3em;
+        vertical-align: middle;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px #777;
+        color: #fff;
+        outline: none;
+        border: 2px solid #F64C2B;
+        border-radius: 15px;
+        box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+        background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    }
+    .form {
+        width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+        .main__contacts__element, .map, .main__button {
+            max-width: 365px ;
+ 
+        }
+    }
+    @media screen and (max-width: 1400px) {
         .main__contacts {
             display: flex;
             flex-wrap: wrap;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            gap: 34px;
+            align-content: center;
+            
         }
-        .main__contacts__element {
-            height: 100%;
+        .form {
+            display: none;
+           }
+        .main__button {
+            display: flex;
+            flex-direction: column;
+        }
+        .map__text {
+            margin: 48px 0 48px 0;
         }
       }
 
       @media screen and (min-width: 1400px) {
-        .main__container  {
-            max-width: 1120px;
-        }
         .main__contacts__element-num, .main__contacts__element-email {
             font-size: 1em;
         }
