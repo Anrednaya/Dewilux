@@ -14,27 +14,64 @@
     <title>Dewilux</title>
   </head>
   <body>
-    <header class="header container-xl">
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand header__link" href="#">
-          <svg class="header__icon-home">
-            <use xlink:href="./assets/icons/sprite.svg#home"></use>
-          </svg>
-          <svg class="logo">
-            <use xlink:href="./assets/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
+    <header class="header sticky-top">
+      <div class="container-xl p-0">
+        <nav class="navbar navbar-expand-md p-0">
+          <a class="navbar-brand header__home-link" href="./index.html">
+            <svg class="header__home-icon">
+              <use xlink:href="./assets/icons/sprite.svg#home"></use>
+            </svg>
+            <svg class="logo">
+              <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item dropdown">
+                <a
+                  class="header__link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  О компании
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">О нас</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">История компании</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">DYO в мире</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Завод DYO в России</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="#">Продукция</a>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
