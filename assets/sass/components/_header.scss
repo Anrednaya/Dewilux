@@ -1,15 +1,217 @@
 .header {
+  min-width: 320px;
   padding: 0 $global-side-padding;
+
+  font-size: 2.6em;
+
+  background-color: #fff;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.12);
+
+  .header__home-link {
+    padding: 0;
+    transition: 0.3s;
+  }
+
+  .header__home-link:hover {
+    transform: scale(1.05);
+  }
+
+  .header__home-icon {
+    width: 34px;
+    height: 48px;
+    padding-bottom: 5px;
+
+    fill: $accent-red;
+
+    transition: 0.3s;
+  }
+}
+
+.dropdown-menu {
+  display: block;
+  width: 100%;
+
+  border: none;
+  border-radius: 0;
+  background-color: white;
+}
+
+.dropdown-item {
+  padding-top: 8px;
+
+  color: $gray;
+  font-size: 2em;
+}
+
+/////////////////АНИМАЦИЯ КНОПКИ BURGER MENU//////////////////
+.navbar-toggler {
+  position: relative;
+
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-toggler-icon {
+  display: inline-block;
+  position: relative;
   width: 28px;
-  height: 28px;
-  background-image: url(../icons/menu.svg);
+  height: 2px;
+
+  background-color: $accent-red;
+  background-image: none;
+
+  transition: all 0.3s ease-in-out;
 }
 
-.header__icon-home {
-  width: 34px;
-  height: 48px;
-  padding-bottom: 5px;
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: #000;
+
+  transition: all 0.3s ease-in-out;
 }
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  top: 0;
+
+  transform: rotate(0);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  top: 0;
+
+  transform: rotate(90deg);
+}
+
+////////////////КОНЕЦ АНИМАЦИЯ КНОПКИ BURGER MENU////////////////
+
+/////////////////////МЕДИА ЗАПРОСЫ////////////////////////
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0 $global-side-padding-mobile;
+
+    .header__home-icon {
+      width: 32px;
+      height: 46px;
+    }
+  }
+
+  .nav-item {
+    padding-top: 8px;
+  }
+
+  .nav-item:last-child {
+    padding-bottom: 8px;
+  }
+
+  .nav-item:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+  }
+
+  .nav-item:active {
+    color: #ec0518;
+  }
+
+  .dropdown-item {
+    font-weight: 600;
+  }
+
+  .dropdown-item:active {
+    color: #ec0518;
+    background-color: #f8f9fa;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item {
+    padding: 15px 10px;
+    margin-right: 2vw;
+
+    transition: background-color 0.1s ease;
+  }
+
+  .nav-item:hover {
+    color: white;
+    background-color: $accent-red;
+  }
+
+  .dropdown-menu {
+    top: 99%;
+    left: auto;
+    right: 0;
+    margin-top: 0;
+    width: 260px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+
+    background-color: $accent-red;
+  }
+
+  .dropdown-item {
+    padding: 10px 15px;
+
+    color: #fff;
+  }
+
+  .dropdown-item:visited {
+    color: #fff;
+    background-color: $accent-red;
+  }
+
+  .dropdown-item:hover {
+    color: #fff;
+    background-color: #ec0518;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 2.2em;
+  }
+
+  .dropdown-item {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .dropdown-menu {
+    width: 300px;
+  }
+}
+
+/////////////////////КОНЕЦ МЕДИА ЗАПРОСЫ////////////////////////
