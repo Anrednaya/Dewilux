@@ -10,6 +10,9 @@
 .product-thumb img {
     max-width: 100%;
     max-height:100%;
+}
+
+.product-thumb .img {
     padding-bottom: 25px;
 }
 
@@ -32,9 +35,25 @@
     font-weight: 600;
 }
 
+.product-card_style {
+    margin: 40px;
+}
+
+.product__product-details h4 {
+    height: 85px;
+    overflow: hidden;
+    font-size: 0.9em;
+}
+
 .product-details p {
     height: 130px;
     overflow: hidden;
+}
+
+.product__product-details p {
+    height: 190px;
+    overflow: hidden;
+    font-size: 0.8em;
 }
 
 .product__btn {
@@ -59,8 +78,12 @@
     padding-top: 17px;
 }
 
+.product-card_style {
+    background-color: #D9D9D9;
+}
+
 @media (min-width:1400px) {
-    .product__product-details {
+    .product__product-details-main {
         padding-top:25px;
     }
 }
