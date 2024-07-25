@@ -14,27 +14,64 @@
     <title>Dewilux</title>
   </head>
   <body>
-    <header class="header container-xl">
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand header__link" href="#">
-          <svg class="header__icon-home">
-            <use xlink:href="./assets/icons/sprite.svg#home"></use>
-          </svg>
-          <svg class="logo">
-            <use xlink:href="./assets/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
+    <header class="header sticky-top">
+      <div class="container-xl p-0">
+        <nav class="navbar navbar-expand-md p-0">
+          <a class="navbar-brand header__home-link" href="./index.html">
+            <svg class="header__home-icon">
+              <use xlink:href="./assets/icons/sprite.svg#home"></use>
+            </svg>
+            <svg class="logo">
+              <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item dropdown">
+                <a
+                  class="header__link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  О компании
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">О нас</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">История компании</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">DYO в мире</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Завод DYO в России</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="#">Продукция</a>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -101,66 +138,76 @@
             Продукция Dewilux обладает рядом важных преимуществ:
           </h2>
           <div class="advantages__box">
-            <h3 class="advantages__box-title">Высокое качество</h3>
-            <p class="advantages__box-text">
-              Dewilux использует только проверенное сырье и современные
-              технологии производства, что гарантирует отличные эксплуатационные
-              характеристики их красок и лаков.
-            </p>
+            <div class="advantages__box_text-box">
+              <h3 class="advantages__box-title">Высокое качество</h3>
+              <p class="advantages__box-text">
+                Dewilux использует только проверенное сырье и современные
+                технологии производства, что гарантирует отличные
+                эксплуатационные характеристики их красок и лаков.
+              </p>
+            </div>
             <img
               class="advantages__box-img"
               src="./assets/images/advantage_1.png"
               alt=""
             />
           </div>
-          <div class="advantages__box">
+          <div class="advantages__box advantages__box_reverse">
             <img
               class="advantages__box-img advantages__box-img_reverse"
               src="./assets/images/advantage_2.png"
               alt=""
             />
-            <h3 class="advantages__box-title advantages__box-title_reverse">
-              Широкий ассортимент
-            </h3>
-            <p class="advantages__box-text advantages__box-text_reverse">
-              В линейке Dewilux представлены материалы для различных сфер
-              применения - от бытовых до промышленных. Это позволяет подобрать
-              оптимальное решение под любые задачи.
-            </p>
+            <div class="advantages__box_text-box">
+              <h3 class="advantages__box-title advantages__box-title_reverse">
+                Широкий ассортимент
+              </h3>
+              <p class="advantages__box-text advantages__box-text_reverse">
+                В линейке Dewilux представлены материалы для различных сфер
+                применения - от бытовых до промышленных. Это позволяет подобрать
+                оптимальное решение под любые задачи.
+              </p>
+            </div>
           </div>
           <div class="advantages__box">
-            <h3 class="advantages__box-title">Долговечность</h3>
-            <p class="advantages__box-text">
-              Покрытия Dewilux отличаются повышенной износостойкостью и
-              устойчивостью к внешним воздействиям. Они сохраняют свои свойства
-              в течение длительного времени.
-            </p>
+            <div class="advantages__box_text-box">
+              <h3 class="advantages__box-title">Долговечность</h3>
+              <p class="advantages__box-text">
+                Покрытия Dewilux отличаются повышенной износостойкостью и
+                устойчивостью к внешним воздействиям. Они сохраняют свои
+                свойства в течение длительного времени.
+              </p>
+            </div>
             <img
               class="advantages__box-img"
               src="./assets/images/advantage_3.png"
               alt=""
             />
           </div>
-          <div class="advantages__box">
+          <div class="advantages__box advantages__box_reverse">
             <img
               class="advantages__box-img advantages__box-img_reverse"
               src="./assets/images/advantage_4.png"
               alt=""
             />
-            <h3 class="advantages__box-title advantages__box-title_reverse">
-              Экологичность
-            </h3>
-            <p class="advantages__box-text advantages__box-text_reverse">
-              Вся продукция Dewilux соответствует современным стандартам
-              безопасности и не содержит вредных веществ.
-            </p>
+            <div class="advantages__box_text-box">
+              <h3 class="advantages__box-title advantages__box-title_reverse">
+                Экологичность
+              </h3>
+              <p class="advantages__box-text advantages__box-text_reverse">
+                Вся продукция Dewilux соответствует современным стандартам
+                безопасности и не содержит вредных веществ.
+              </p>
+            </div>
           </div>
           <div class="advantages__box">
-            <h3 class="advantages__box-title">Простота применения</h3>
-            <p class="advantages__box-text">
-              Лакокрасочные материалы Dewilux просты в использовании и не
-              требуют специальных навыков.
-            </p>
+            <div class="advantages__box_text-box">
+              <h3 class="advantages__box-title">Простота применения</h3>
+              <p class="advantages__box-text">
+                Лакокрасочные материалы Dewilux просты в использовании и не
+                требуют специальных навыков.
+              </p>
+            </div>
             <img
               class="advantages__box-img"
               src="./assets/images/advantage_5.png"

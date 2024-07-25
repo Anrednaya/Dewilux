@@ -1,0 +1,111 @@
+.container {
+    @extend %container;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-hero {
+    background-image: url(/assets/images/road.png);
+    
+    height: max(50vh, 500px);
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 800px) {
+        max-height: 500px;
+    }
+
+    @media screen and (max-width: 500px) {
+        max-height: 300px;
+    }
+}
+
+.main__nav {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 54px 0 54px;
+
+    .active {
+        color: $accent-red;
+    }
+
+    .breadcrumb-item:hover {
+        color: $accent-red;
+    }
+}
+
+.story-title {
+    font-size: 3.2em;
+    font-weight: 600;
+    margin: 50px 0 50px;
+}
+
+.verticalLine {
+    border: 1px solid $accent-red;
+    height: 100%;
+    margin-top: 90px;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+        content: " ";
+        width: 200px;
+        height: 2px;
+        background-color: $accent-red;
+    }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            content: " ";
+            width: 270px;
+            height: 2px;
+            background-color: $accent-red;
+            align-self: flex-start;
+        }
+    }
+}
+
+
+
+.content__year {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.content__text {
+    max-width: 500px;
+    font-size: 1.6em;
+
+    @media screen and (max-width: 500px) {
+        max-width: 280px;
+    }
+}
+
+.content__image {
+    width: 20%;
+
+    @media screen and (max-width: 500px) {
+        width: 30%;
+    }
+}
