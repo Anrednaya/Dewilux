@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   font-family: "Source Sans 3", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +38,11 @@ a {
   max-width: 100%;
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 $global-side-padding;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 $global-side-padding-mobile;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 1140px;
@@ -47,10 +51,5 @@ a {
 
   @media screen and (min-width: 1400px) {
     max-width: 1320px;
-  }
-
-  @media screen and (max-width: 767px) {
-    padding: 0 10px;
-  
   }
 }
