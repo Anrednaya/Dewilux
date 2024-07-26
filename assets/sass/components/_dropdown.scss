@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     border: 0;
-    padding: 0 0;
     position: relative;
     @extend %container;
     @media (max-width: 2600px) {
@@ -22,8 +21,6 @@
         margin-right: auto;
         margin-left: auto;
         max-width: 1140px;
-        padding-left: 10px;
-        padding-right: 10px;
         font-size: 16px;
         @media (max-width: 1250px) {
             max-width: 960px;
@@ -143,7 +140,7 @@
         vertical-align: baseline;
         list-style: none;
         padding: 0;
-        font-size: 14px;
+        font-size: 30px;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 28px;
@@ -160,9 +157,8 @@
     }
     
     .breadcrumb-item a {
-    color: #000;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 30px;
     line-height: 0.62222;
     @media screen and (max-width: 376px) {
         font-size: 12px;
@@ -174,7 +170,7 @@
     
     .breadcrumb-item:last-child a {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 30px;
         line-height: 1.2;
         color: #FF0000;
         @media screen and (max-width: 376px) {
