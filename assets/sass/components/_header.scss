@@ -1,6 +1,5 @@
 .header {
   min-width: 320px;
-  padding: 0 $global-side-padding;
 
   font-size: 2.6em;
 
@@ -25,6 +24,10 @@
 
     transition: 0.3s;
   }
+}
+
+.container-xl {
+  padding: 0 $global-side-padding;
 }
 
 .dropdown-menu {
@@ -113,12 +116,14 @@
 
 @media screen and (max-width: 767px) {
   .header {
-    padding: 0 $global-side-padding-mobile;
-
     .header__home-icon {
       width: 32px;
       height: 46px;
     }
+  }
+
+  .container-xl {
+    padding: 0 $global-side-padding-mobile;
   }
 
   .nav-item {
@@ -151,9 +156,8 @@
 @media screen and (min-width: 768px) {
   .nav-item {
     padding: 15px 10px;
-    margin-right: 2vw;
 
-    transition: background-color 0.1s ease;
+    transition: background-color 0.2s ease;
   }
 
   .nav-item:hover {
@@ -171,7 +175,7 @@
     opacity: 0;
     visibility: hidden;
 
-    transition: opacity 0.1s ease, visibility 0.1s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 
   .dropdown:hover .dropdown-menu {
