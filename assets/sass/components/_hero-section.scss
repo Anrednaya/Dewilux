@@ -4,7 +4,7 @@
   max-height: 898px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/section-hero.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/section-hero.png");
   font-style: italic;
   color: white;
   text-transform: uppercase;
@@ -103,19 +103,16 @@
   .title__main-page {
     width: 90%;
     margin: 0;
-    padding: 0 15px;
     font-size: 32px;
     font-weight: 600;
     line-height: 54px;
     @media screen and (max-width: 1200px) {
-      padding: 0 10px;
       font-size: 25px;
       line-height: 40px;
       margin: 0 auto;
       text-align: center;
     }
     @media screen and (max-width: 767px) {
-      padding: 0 10px;
       font-size: 20px;
       line-height: 25px;
     }
