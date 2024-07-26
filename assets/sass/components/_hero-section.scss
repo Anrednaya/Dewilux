@@ -4,10 +4,14 @@
   max-height: 898px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/section-hero.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/section-hero.png");
   font-style: italic;
   color: white;
   text-transform: uppercase;
+  @media screen and (max-width: 600px) {
+    background-image: url("../images/hero-section-mobile.png");
+    height: 113vw;
+  }
   .image-block__container {
     @extend %container;
     height: 100%;
@@ -36,9 +40,6 @@
         }
         @media screen and (max-width: 600px) {
           font-size: 25px;
-        }
-        @media screen and (max-width: 450px) {
-          font-size: 15px;
         }
       }
       .text-part__logo {
@@ -80,7 +81,6 @@
           font-size: 30px;
         }
         @media screen and (max-width: 450px) {
-          font-size: 20px;
           margin: 0 0;
         }
       }
