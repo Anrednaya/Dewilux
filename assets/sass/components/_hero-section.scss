@@ -9,7 +9,7 @@
   color: white;
   text-transform: uppercase;
   @media screen and (max-width: 600px) {
-    background-image: url("../images/hero-section-mobile.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/hero-section-mobile.png");
     height: 113vw;
   }
   .image-block__container {
