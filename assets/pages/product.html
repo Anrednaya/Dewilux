@@ -9,42 +9,87 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg" />
     <title>Dewilux</title>
   </head>
   <body>
-    <header class="header container-xl">
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand header__link" href="#">
-          <svg class="header__icon-home">
-            <use xlink:href="./assets/icons/sprite.svg#home"></use>
-          </svg>
-          <svg class="logo">
-            <use xlink:href="./assets/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
+    <header class="header sticky-top">
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-md p-0">
+          <a class="navbar-brand header__home-link" href="./index.html">
+            <svg class="header__home-icon">
+              <use xlink:href="./assets/icons/sprite.svg#home"></use>
+            </svg>
+            <svg class="logo">
+              <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item dropdown">
+                <a
+                  class="header__link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  о компании
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../index.html">о нас</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">история компании</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">DYO в мире</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">завод DYO в России</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="#">продукция</a>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="../pages/contacts.html">контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
+
+
     <main class="main">
 
+      <section class="hero-section">
+        <div class="hero-section__image-block-products image-block">
+          
+        </div>
+        
+      </section>
 
       <div class="container ">
         <div class="row">
           <div class="col-lg-4 col-sm-6">
             <div class="product-card mb-4 product-card_style">
               <div class="product-thumb text-center">
-                <img src="./assets/images/product1.png" alt="product_img">
+                <img src="../images/product1.png" alt="product_img">
               </div>
               <div class="product-details text-center product__product-details">
                 <h4>
@@ -59,7 +104,7 @@
       <div class="col-lg-4 col-sm-6">
         <div class="product-card product-card_style">
           <div class="product-thumb text-center">
-            <img src="./assets/images/product2.png" alt="product_img">
+            <img src="../images/product2.png" alt="product_img">
           </div>
           <div class="product-details text-center product__product-details">
             <h4>
@@ -74,7 +119,7 @@
   </div><div class="col-lg-4 col-sm-6">
     <div class="product-card  product-card_style">
       <div class="product-thumb text-center">
-        <img src="./assets/images/product3.png" alt="product_img">
+        <img src="../images/product3.png" alt="product_img">
       </div>
       <div class="product-details text-center product__product-details">
         <h4>
@@ -93,7 +138,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="product-card  product-card_style">
       <div class="product-thumb text-center">
-        <img src="./assets/images/product4.png" alt="product_img">
+        <img src="../images/product4.png" alt="product_img">
       </div>
       <div class="product-details text-center product__product-details">
         <h4>
@@ -108,7 +153,7 @@
 <div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
   <div class="product-thumb text-center">
-    <img src="./assets/images/product5.png" alt="product_img">
+    <img src="../images/product5.png" alt="product_img">
   </div>
   <div class="product-details text-center product__product-details">
     <h4>
@@ -123,7 +168,7 @@
 </div><div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
 <div class="product-thumb text-center">
-<img src="./assets/images/product6.png" alt="product_img">
+<img src="../images/product6.png" alt="product_img">
 </div>
 <div class="product-details text-center product__product-details">
 <h4>
@@ -142,7 +187,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="product-card  product-card_style">
       <div class="product-thumb text-center">
-        <img src="./assets/images/product4.png" alt="product_img">
+        <img src="../images/product4.png" alt="product_img">
       </div>
       <div class="product-details text-center product__product-details">
         <h4>
@@ -157,7 +202,7 @@
 <div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
   <div class="product-thumb text-center">
-    <img src="./assets/images/product5.png" alt="product_img">
+    <img src="../images/product5.png" alt="product_img">
   </div>
   <div class="product-details text-center product__product-details">
     <h4>
@@ -172,7 +217,7 @@
 </div><div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
 <div class="product-thumb text-center">
-<img src="./assets/images/product6.png" alt="product_img">
+<img src="../images/product6.png" alt="product_img">
 </div>
 <div class="product-details text-center product__product-details">
 <h4>
@@ -191,7 +236,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="product-card  product-card_style">
       <div class="product-thumb text-center">
-        <img src="./assets/images/product10.png" alt="product_img">
+        <img src="../images/product10.png" alt="product_img">
       </div>
       <div class="product-details text-center product__product-details">
         <h4>
@@ -206,7 +251,7 @@
 <div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
   <div class="product-thumb text-center">
-    <img src="./assets/images/product11.png" alt="product_img">
+    <img src="../images/product11.png" alt="product_img">
   </div>
   <div class="product-details text-center product__product-details">
     <h4>
@@ -219,7 +264,7 @@
 </div><div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
 <div class="product-thumb text-center">
-<img src="./assets/images/product12.png" alt="product_img">
+<img src="../images/product12.png" alt="product_img">
 </div>
 <div class="product-details text-center product__product-details">
 <h4>
@@ -237,7 +282,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="product-card  product-card_style">
       <div class="product-thumb text-center">
-        <img src="./assets/images/product15.png" alt="product_img">
+        <img src="../images/product15.png" alt="product_img">
       </div>
       <div class="product-details text-center product__product-details">
         <h4>
@@ -251,7 +296,7 @@
 <div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
   <div class="product-thumb text-center">
-    <img src="./assets/images/product16.png" alt="product_img">
+    <img src="../images/product16.png" alt="product_img">
   </div>
   <div class="product-details text-center product__product-details">
     <h4>
@@ -266,7 +311,7 @@
 </div><div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
 <div class="product-thumb text-center">
-<img src="./assets/images/product17.png" alt="product_img">
+<img src="../images/product17.png" alt="product_img">
 </div>
 <div class="product-details text-center product__product-details">
 <h4>
@@ -285,7 +330,7 @@
   <div class="col-lg-4 col-sm-6">
     <div class="product-card  product-card_style">
       <div class="product-thumb text-center">
-        <img src="./assets/images/product19.png" alt="product_img">
+        <img src="../images/product19.png" alt="product_img">
       </div>
       <div class="product-details text-center product__product-details">
         <h4>
@@ -299,7 +344,7 @@
 <div class="col-lg-4 col-sm-6">
 <div class="product-card  product-card_style">
   <div class="product-thumb text-center">
-    <img src="./assets/images/product16.png" alt="product_img">
+    <img src="../images/product16.png" alt="product_img">
   </div>
   <div class="product-details text-center product__product-details">
     <h4>
