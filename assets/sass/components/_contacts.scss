@@ -21,12 +21,12 @@
     // background-repeat: no-repeat;
     // background-image: url("../images/contact_1.png");
     }
-    // .contacts__nav {
-    //     font-size: 30px;
-    //     font-weight: 600;
-    //     text-transform: uppercase;
-    //     margin: 54px 0 54px ;
-    // }
+    .contacts__nav {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 54px 0 54px ;
+    }
   
     .breadcrumb-item {
         font-size: 30px; 
@@ -124,6 +124,9 @@
         border-radius: 15px;
         box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
         background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+    }
+    .contacts-main-part__feedback-button:hover {
+        transform: scale(1.2);
     }
     .contacts-main-part__right-part {
         width: 100%;
