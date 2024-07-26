@@ -81,15 +81,13 @@
             height: 300px;
             }
         }
-
         .dropdowns__img {
         display: flex;
         float: right; 
-        width: 350px; 
+        width: 350px;
         height:auto; 
         margin-left: 22px; 
         margin-right: 22px;
-
         @media screen and (max-width: 320px) {
             width: 100%; 
             height: auto;
@@ -141,7 +139,7 @@
         list-style: none;
         padding: 0;
         font-size: 30px;
-        font-weight: 700;
+        font-weight: 600;
         text-transform: uppercase;
         margin-bottom: 28px;
         @media screen and (max-width: 376px) {
@@ -161,10 +159,7 @@
     font-size: 30px;
     line-height: 0.62222;
     @media screen and (max-width: 376px) {
-        font-size: 12px;
-        }
-    @media screen and (max-width: 768px) {
-        font-size: 13px;
+        font-size: 20px;
         }
     }
     
