@@ -14,6 +14,10 @@
   background-color: #d9d9d9;
   height: 50px;
 }
+.footer__address {
+  margin-bottom: 0;
+}
+
 .footer__contacts {
   padding-right: 40px;
   display: flex;
@@ -75,5 +79,24 @@
     flex-direction: column;
     gap: 0;
     align-items: flex-start;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .footer__container {
+    flex-direction: column;
+    height: 250px;
+  }
+  .footer__list {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 0;
+  }
+  .footer__contacts {
+    padding-top: 10px;
+  }
+  .footer__copyright {
+    flex-direction: column;
+    height: 60px;
   }
 }
