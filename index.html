@@ -50,20 +50,24 @@
                   о компании
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">о нас</a></li>
+                  <li><a class="dropdown-item" href="./assets/pages/dropdown-aboutus.html">о нас</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">история компании</a>
+                    <a class="dropdown-item" href="./assets/pages/dropdown-company.html">история компании</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">DYO в мире</a>
+                    <a class="dropdown-item" href="./assets/pages/dropdown-dyoworld.html">DYO в мире</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">завод DYO в России</a>
+                    <a class="dropdown-item" href="./assets/pages/dropdown-dyorussia.html">завод DYO в России</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="header__link" href="#">продукция</a>
+<<<<<<< HEAD
+                <a class="header__link" href="#product">продукция</a>
+=======
+                <a class="header__link" href="./assets/pages/product.html">продукция</a>
+>>>>>>> main
               </li>
               <li class="nav-item">
                 <a class="header__link" href="./assets/pages/contacts.html">контакты</a>
@@ -75,9 +79,33 @@
     </header>
 
     <main class="main">
-
-      <div class="container">
+      <section class="hero-section">
+        <div class="hero-section__image-block image-block">
+          <div class="image-block__container">
+            <div class="text-part">
+              <p class="text-part__title">Официальный<br>представитель</p>
+              <div class="text-part__logo">
+                <img src="./assets/images/logotype.svg" alt="Dewilux-logotype" />
+              </div>
+              <p class="text-part__location">в Пензе</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-section__title title" >
+          <h1 class="title__main-page">
+            <strong>Dewilux</strong> - это надежный бренд высококачественных
+            лакокрасочных материалов, зарекомендовавший себя на рынке.
+          </h1>
+        </div>
+      </section>
+      <div class="container" id="product">
         <div class="row">
+          <div class="col product__title">
+            <h3 class="advantages__box-title" style="margin-left: 0px;">Наша продукция:</h3>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
           <div class="col-lg-4 col-sm-6">
             <div class="product-card mb-4">
               <div class="product-thumb text-center">
@@ -124,14 +152,12 @@
         </div>
         <div class="row">
           
-          <div class="d-grid mx-auto col-3 product__btn-container">
-            <a href="product.html" class="btn btn-danger product__btn" ><b>Вся продукция</b></a>
+          <div class="d-grid mx-auto col-3 col-sm-4 product__btn-container">
+            <a href="./assets/pages/product.html" class="btn btn-danger product__btn" ><b>Вся продукция</b></a>
           </div>
         
         </div>
       </div>
-
-
       <section class="section-advantages">
         <div class="advantages__container">
           <h2 class="advantages__title">
