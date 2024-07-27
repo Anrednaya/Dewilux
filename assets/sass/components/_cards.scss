@@ -77,23 +77,33 @@
     font-size: 2.8em;
     font-weight: 300;
     height:90px;
+    padding: 0 50px;
     @media (max-width:900px) {
         font-size: 2.5em;
     }
 
-    @media (max-width:670px) {
-        font-size: 2.1em;
-        height: 80px;
+    @media (max-width:600px) {
+        font-size: 1.8em;
+        height: 75px;
+        padding: 0 30px;
     }
 
-    @media (max-width:575px) {
-        font-size: 1.8em;
+    @media (max-width:400px) {
+        font-size: 1.4em;
+        height: 65px;
+        padding: 0 25px;
     }
+  
 }
 
 .product__btn-container {
     padding-top:50px;
     padding-bottom:50px;
+    @media (max-width:600px) {
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+
 }
 
 .product__btn-link {
@@ -104,13 +114,8 @@
     display: inline-block;
     padding-top: 17px;
     @media (max-width:900px) {
-        padding-top: 19px;
+        padding-top: 21px;
     }  
-    
-    @media (max-width:575px) {
-        display: inline-block;
-        padding-top:7px;
-    }
 }
 
 .product-card_style {
