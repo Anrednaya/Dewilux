@@ -141,7 +141,14 @@
         font-weight: 600;
         text-transform: uppercase;
         margin-bottom: 28px;
+        @media screen and (max-width: 376px) {
+        
+            margin-bottom: 20px;
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+            }
         }
+    }
 
     .breadcrumb-item {
     display: inline;
