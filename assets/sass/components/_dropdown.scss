@@ -6,9 +6,13 @@
     border: 0;
     position: relative;
     @extend %container;
-    @media (max-width: 2600px) {
+
+    @media screen and (max-width: 2600px) {
         margin: 0 auto;
         }
+    @media screen and (max-width: 5000px) {
+            margin: 0 auto;
+            }
     }
     .dropdowns__container {
         color: #505050;
@@ -22,11 +26,14 @@
         margin-left: auto;
         max-width: 1140px;
         font-size: 16px;
-        @media (max-width: 1250px) {
-            max-width: 960px;
-            }
-            @media (max-width: 2600px) {
+        @media screen and (max-width: 5000px) {
             margin: 0 auto;
+            }
+        @media screen and (max-width: 2600px) {
+            margin: 0 auto;
+            }
+        @media screen and (max-width: 1250px) {
+            max-width: 960px;
             }
         } 
     .dropdowns__title {
@@ -41,19 +48,20 @@
         line-height: 1.2;
         font-size: 32px;
         margin-bottom: 24px;
-        @media screen and (max-width: 320px) {
-            font-size: 20px;
-            margin-bottom: 16px;
+        @media screen and (max-width: 2600px) {
+            font-size: 32px;
             }
+            @media screen and (max-width: 768px) {
+                font-size: 28px;
+                }
         @media screen and (max-width: 376px) {
             font-size: 24px;
             }
-        @media screen and (max-width: 768px) {
-            font-size: 28px;
-            }
-            @media (max-width: 2600px) {
-            font-size: 32px;
-            }
+            @media screen and (max-width: 320px) {
+                font-size: 20px;
+                margin-bottom: 16px;
+                }
+            
         }
     .image-header {
         color: #505050;
@@ -67,58 +75,49 @@
         background-position: center center;
         background-size: cover;
         height: 300px;
-
+        @media screen and (max-width: 2600px) {
+            height: 300px;
+            }
+            @media screen and (max-width: 768px) {
+                height: 250px;
+                }
+                @media screen and (max-width: 376px) {
+                    height: 200px;
+                    }
         @media screen and (max-width: 320px) {
             height: 180px;
             }
-        @media screen and (max-width: 376px) {
-            height: 200px;
-            }
-        @media screen and (max-width: 768px) {
-            height: 250px;
-            }
-            @media (max-width: 2600px) {
-            height: 300px;
-            }
         }
+        
         .dropdowns__img {
         display: flex;
         float: right; 
         width: 350px;
         height:auto; 
-        margin-left: 22px; 
-        margin-right: 22px;
-        @media screen and (max-width: 320px) {
-            width: 100%; 
-            height: auto;
-            }
 
-        @media screen and (max-width: 376px) {
-            width: 100%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            align-items: center;
-        }
-        
-        @media screen and (max-width: 768px) {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            
-        }
-        
-        @media (max-width: 1250px) {
+        @media screen and (max-width: 1250px) {
             width: 350px;
             height: 194px;
             margin-bottom: 20px;
         }
-    }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 376px) {
+            float: none;
+            width: 100%;
+            height: auto;
+            align-items: center;
+        }
+        @media screen and (max-width: 320px) {
+            width: 100%; 
+            height: auto;
+            }  
+        }
 
     .main__nav {
-        font-size: 2em;
-        font-weight: 600;
-        text-transform: uppercase;
         margin: 54px 0 54px;
     
         .active {
@@ -143,13 +142,14 @@
         text-transform: uppercase;
         margin-bottom: 28px;
         @media screen and (max-width: 376px) {
-           
+        
             margin-bottom: 20px;
         @media screen and (max-width: 768px) {
             font-size: 13px;
             }
         }
     }
+
     .breadcrumb-item {
     display: inline;
     }
@@ -168,11 +168,12 @@
         font-size: 30px;
         line-height: 1.2;
         color: #FF0000;
-        @media screen and (max-width: 376px) {
-            font-size: 12px;
-            }
+        
         @media screen and (max-width: 768px) {
             font-size: 13px;
+            }
+            @media screen and (max-width: 376px) {
+            font-size: 12px;
             }
         }
     
@@ -192,13 +193,14 @@
         margin-bottom: 24px;
         font-size: 1em;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 2600px) {
+            font-size: 16px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+                }
         @media screen and (max-width: 376px) {
             font-size: 14px;
-            }
-        @media screen and (max-width: 768px) {
-            font-size: 15px;
-            }
-            @media (max-width: 2600px) {
-            font-size: 16px;
             }
     }
