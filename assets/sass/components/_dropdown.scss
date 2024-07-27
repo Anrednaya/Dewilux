@@ -142,16 +142,13 @@
         text-transform: uppercase;
         margin-bottom: 28px;
         @media screen and (max-width: 376px) {
-        
-            margin-bottom: 20px;
-        @media screen and (max-width: 768px) {
             font-size: 13px;
-            }
-        }
     }
+}
 
     .breadcrumb-item {
     display: inline;
+    font-size: 20px;
     }
     
     .breadcrumb-item a {
@@ -169,18 +166,23 @@
         line-height: 1.2;
         color: #FF0000;
         
-        @media screen and (max-width: 768px) {
-            font-size: 13px;
-            }
             @media screen and (max-width: 376px) {
-            font-size: 12px;
+            font-size: 20px;
             }
+        }
+        .breadcrumb-item active text-danger {
+            @media screen and (max-width: 376px) {
+                font-size: 20px;
+                }
         }
     
     .breadcrumb-item a:hover,
     .breadcrumb-item a:focus,
     .breadcrumb-item a:active {
         color: #FF0000;
+        @media screen and (max-width: 376px) {
+            font-size: 20px;
+            }
     }
 
     .dropdowns-text {
