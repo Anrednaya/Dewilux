@@ -128,59 +128,29 @@
             color: $accent-red;
         }
     }
-    .breadcrumb {
-        color: #505050;
-        box-sizing: border-box;
-        margin: 0;
-        border: 0;
-        font: inherit;
-        vertical-align: baseline;
-        list-style: none;
-        padding: 0;
-        font-size: 30px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-bottom: 28px;
-        @media screen and (max-width: 376px) {
-        
-            margin-bottom: 20px;
-        @media screen and (max-width: 768px) {
-            font-size: 13px;
-            }
-        }
-    }
-
     .breadcrumb-item {
-    display: inline;
+        font-size: 30px; 
     }
-    
-    .breadcrumb-item a {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 0.62222;
-    @media screen and (max-width: 376px) {
-        font-size: 20px;
-        }
-    }
-    
-    .breadcrumb-item:last-child a {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 1.2;
-        color: #FF0000;
+    .breadcrumb-item:hover {
+        color: #dc3545;
         
-        @media screen and (max-width: 768px) {
-            font-size: 13px;
-            }
             @media screen and (max-width: 376px) {
-            font-size: 12px;
+            font-size: 20px;
             }
+        }
+        .breadcrumb-item active text-danger {
+            @media screen and (max-width: 376px) {
+                font-size: 20px;
+                }
         }
     
     .breadcrumb-item a:hover,
     .breadcrumb-item a:focus,
     .breadcrumb-item a:active {
         color: #FF0000;
+        @media screen and (max-width: 376px) {
+            font-size: 20px;
+            }
     }
 
     .dropdowns-text {

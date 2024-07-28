@@ -10,31 +10,88 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="shortcut icon" href="../favicon.svg" type="image/svg" />
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/svg" />
     <title>Dewilux</title>
   </head>
   <body>
-    <header class="header container-xl">
-      <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand header__link" href="../../index.html">
-          <svg class="header__icon-home">
-            <use xlink:href="../assets/icons/sprite.svg#home"></use>
-          </svg>
-          <svg class="logo">
-            <use xlink:href="../assets/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
+    <header class="header sticky-top">
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-md p-0">
+          <a class="navbar-brand header__home-link" href="../../index.html">
+            <svg class="header__home-icon">
+              <use xlink:href="../icons/sprite.svg#home"></use>
+            </svg>
+            <svg class="logo">
+              <use xlink:href="../icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item dropdown">
+                <a
+                  class="header__link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  о компании
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/dropdown-aboutus.html"
+                      >о нас</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/story.html"
+                      >история компании</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/dropdown-dyoworld.html"
+                      >DYO в мире</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/dropdown-dyorussia.html"
+                      >завод DYO в России</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="../pages/product.html"
+                  >продукция</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="header__link" href="../pages/contacts.html"
+                  >контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <div class="section-hero"></div>
@@ -47,8 +104,8 @@
           </ol>
         </nav>
         <h2 class="story-title">История компании</h2>
-        <div class="container_row">
-          <div class="container__verticalLine">
+        <div class="container-row">
+          <div class="container-row__verticalLine">
             <div class="verticalLine"></div>
           </div>
           <div class="container-content">
@@ -465,5 +522,33 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <address class="footer__address">
+          <ul class="footer__contacts">
+            <li>
+              <a href="mailto:dewilux@list.ru" target="_blank"
+                >dewilux@list.ru</a
+              >
+            </li>
+            <li><a href="tel:+79273756393">+7 (927) 375-63-93</a></li>
+          </ul>
+        </address>
+        <svg class="logo">
+          <use xlink:href="../icons/sprite.svg#logo"></use>
+        </svg>
+        <ul class="footer__list">
+          <li>
+            <a href="../pages/dropdown-aboutus.html">о компании</a>
+          </li>
+          <li><a href="../pages/product.html">продукция</a></li>
+          <li><a href="../pages/contacts.html">контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">© 2024 ITGIRLSCHOOL</p>
+        <p class="footer__copyright-text">Изображения разработаны Freepik</p>
+      </div>
+    </footer>
   </body>
 </html>
