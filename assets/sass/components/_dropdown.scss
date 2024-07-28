@@ -78,7 +78,8 @@
         height: 300px;
 
         @media screen and (max-width: 5000px) {
-            height: 898px;;
+            height: 898px;}
+            
         @media screen and (max-width: 2600px) {
             height: 300px;
             }
@@ -92,7 +93,6 @@
             height: 180px;
             }
         }
-    }
         
         .dropdowns__img {
         display: flex;
