@@ -9,12 +9,14 @@
   max-height: 898px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/section-hero.png");
-  font-style: italic;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/section-hero.png");
   color: white;
   text-transform: uppercase;
+  font-weight: 700;
   @media screen and (max-width: 600px) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/hero-section-mobile.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url("../images/hero-section-mobile.png");
     height: 113vw;
   }
   .image-block__container {
@@ -68,25 +70,6 @@
         }
         img {
           width: 100%;
-        }
-      }
-      .text-part__location {
-        font-size: 65px;
-        margin-top: 5px;
-        @media screen and (max-width: 1400px) {
-          font-size: 50px;
-        }
-        @media screen and (max-width: 1100px) {
-          font-size: 45px;
-        }
-        @media screen and (max-width: 900px) {
-          font-size: 40px;
-        }
-        @media screen and (max-width: 600px) {
-          font-size: 30px;
-        }
-        @media screen and (max-width: 450px) {
-          margin: 0 0;
         }
       }
     }
