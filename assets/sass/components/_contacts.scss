@@ -163,6 +163,10 @@
         }
     }
     @media screen and (max-width: 1400px) {
+        .contacts  {
+            
+            padding-bottom: 0;
+        }
         .contacts-main-part {
             display: flex;
             flex-wrap: wrap;
