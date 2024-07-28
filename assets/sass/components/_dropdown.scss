@@ -66,6 +66,7 @@
     .image-header {
         color: #505050;
         box-sizing: border-box;
+        max-height: 898px;
         margin: 0;
         padding: 0;
         border: 0;
@@ -75,6 +76,10 @@
         background-position: center center;
         background-size: cover;
         height: 300px;
+
+        @media screen and (max-width: 5000px) {
+            height: 898px;}
+            
         @media screen and (max-width: 2600px) {
             height: 300px;
             }
