@@ -20,8 +20,8 @@
           <a class="navbar-brand header__home-link" href="../../index.html">
             <svg class="header__home-icon">
               <use xlink:href="../icons/sprite.svg#home"></use>
-          </svg>
-          <svg class="logo">
+            </svg>
+            <svg class="logo">
               <use xlink:href="../icons/sprite.svg#logo"></use>
             </svg>
           </a>
@@ -50,15 +50,31 @@
                   о компании
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../pages/dropdown-aboutus.html">о нас</a></li>
                   <li>
-                    <a class="dropdown-item" href="../pages/story.html">история компании</a>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/dropdown-aboutus.html"
+                      >о нас</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../pages/dropdown-dyoworld.html">DYO в мире</a>
+                    <a class="dropdown-item" href="../pages/story.html"
+                      >история компании</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../pages/dropdown-dyorussia.html">завод DYO в России</a>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/dropdown-dyoworld.html"
+                      >DYO в мире</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../pages/dropdown-dyorussia.html"
+                      >завод DYO в России</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -66,7 +82,9 @@
                 <a class="header__link" href="#">продукция</a>
               </li>
               <li class="nav-item">
-                <a class="header__link" href="../pages/contacts.html">контакты</a>
+                <a class="header__link" href="../pages/contacts.html"
+                  >контакты</a
+                >
               </li>
             </ul>
           </div>
@@ -74,280 +92,312 @@
       </div>
     </header>
 
-
     <main class="main">
-
       <section class="hero-section">
-        <div class="hero-section__image-block-products image-block">
-          
-        </div>
-        
+        <div class="hero-section__image-block-products image-block"></div>
       </section>
 
-      <div class="container ">
+      <div class="container product">
         <div class="row">
+          <nav
+            class="main__nav main__nav-padding"
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="../../index.html">Главная страница</a>
+              </li>
+              <li
+                class="breadcrumb-item active text-danger"
+                aria-current="page"
+              >
+                продукция
+              </li>
+            </ol>
+          </nav>
           <div class="col-lg-4 col-sm-6">
             <div class="product-card mb-4 product-card_style">
+              <div class="product-thumb text-center product__img">
+                <img src="../images/product1.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>БЕЛАЯ НИТРОЦЕЛЛЮЛОЗНАЯ КРАСКА “VIGOLOID”</h4>
+                <p>
+                  Однокомпонентная краска воздушной сушки на нитроцеллюлозной
+                  основе для отделки деревянной мебели, эксплуатируемой внутри
+                  помещения.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
               <div class="product-thumb text-center">
-                <img src="../images/product1.png" alt="product_img">
+                <img src="../images/product2.png" alt="product_img" />
               </div>
               <div class="product-details text-center product__product-details">
                 <h4>
-                  БЕЛАЯ НИТРОЦЕЛЛЮЛОЗНАЯ КРАСКА “VIGOLOID”
+                  ПОЛИУРЕТАНОВАЯ КРАСКА “DERODUR”, БЕЛАЯ МАТОВАЯ Отвердитель для
+                  матовой ПУ краски
                 </h4>
                 <p>
-                  Однокомпонентная краска воздушной сушки на нитроцеллюлозной основе для отделки деревянной мебели, эксплуатируемой внутри помещения.               
+                  Двухкомпонентная белая полиуретановая краска, высыхающая
+                  в&nbsp;результате химической реакции. Отличается высокой
+                  скоростью высыхания
                 </p>
-                </div>
+              </div>
             </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="product-card product-card_style">
-          <div class="product-thumb text-center">
-            <img src="../images/product2.png" alt="product_img">
           </div>
-          <div class="product-details text-center product__product-details">
-            <h4>
-              ПОЛИУРЕТАНОВАЯ КРАСКА “DERODUR”, БЕЛАЯ МАТОВАЯ
-Отвердитель для матовой ПУ краски
-            </h4>
-            <p>
-              Двухкомпонентная белая полиуретановая краска, высыхающая в&nbsp;результате химической реакции. Отличается высокой скоростью высыхания  
-            </p>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product3.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Полиуретановый грунт для отделки МДФ, белый Отвердитель для
+                  полиуретановых ЛКМ
+                </h4>
+                <p>
+                  Двухкомпонентный полиуретановый грунт для отделки мебели,
+                  эксплуатируемой внутри помещений. Легко шлифуется, быстро
+                  сохнет, образует идеально ровную поверхность под финишное
+                  покрытие.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product4.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  ПОЛИУРЕТАНОВЫЙ ГРУНТ, КРЕМОВЫЙ / Отвердитель для
+                  полиуретановых ЛКМ
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product5.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Белый полиуретановый грунт для отделки МДФ Отвердитель для
+                  полиуретанового грунта
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product6.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Полиуретановый грунт для отделки МДФ, белый Отвердитель для
+                  полиуретановых ЛКМ
+                </h4>
+                <p>
+                  Двухкомпонентный полиуретановый грунт для отделки мебели,
+                  эксплуатируемой внутри помещений. Легко шлифуется, образует
+                  идеально ровную поверхность под финишное покрытие.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product4.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Полиуретановый прозрачный грунт Отвердитель для полиуретановых
+                  ЛКМ
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product5.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Полиуретановая краска для межкомнатных дверей, кремовая
+                  Отвердитель для ПУ краски для дверей
+                </h4>
+                <p>
+                  Двухкомпонентная полиуретановая краска для отделки
+                  межкомнатных дверей с сотовым заполнением, которая отличается
+                  высокой скоростью высыхания и хорошей укрывистостью.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product6.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Полиуретановый грунт для отделки МДФ, белый Отвердитель для
+                  полиуретановых ЛКМ
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product10.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Акриловый матовый лак "Ultramar" Отвердитель для акриловых
+                  лаков и эмалей
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product11.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>Нитроцеллюлозная глянцевая белая база "Dewimix"</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product12.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Акриловый шелковисто-матовый лак Отвердитель для акриловых
+                  лаков / краски
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product15.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>Полиуретановая глянцевая белая база "Dewimix"</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product16.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>ПАТИНА (КРАСКА С ЭФФЕКТОМ СТАРЕНИЯ) КОРИЧНЕВАЯ</h4>
+                <p>
+                  Патина - это однокомпонентная краска с эффектом старения на
+                  синтетической основе для отделки деревянных поверхностей,
+                  эксплуатируемых внутри помещений.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product17.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>Общий отвердитель для ПУ баз колеровочной системы</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product19.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  Белая глянцевая эмаль на водной основе для наружных работ
+                </h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="product-card product-card_style">
+              <div class="product-thumb text-center">
+                <img src="../images/product16.png" alt="product_img" />
+              </div>
+              <div class="product-details text-center product__product-details">
+                <h4>
+                  РАПИД ПАТИНА (БЫСТРОСОХНУЩАЯ КРАСКА С ЭФФЕКТОМ СТАРЕНИЯ)
+                  ТЕМНЫЙ ОРЕХ
+                </h4>
+                <p>
+                  Патина - это однокомпонентная краска с эффектом старения на
+                  синтетической основе для отделки деревянных поверхностей,
+                  эксплуатируемых внутри помещений.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-  </div><div class="col-lg-4 col-sm-6">
-    <div class="product-card  product-card_style">
-      <div class="product-thumb text-center">
-        <img src="../images/product3.png" alt="product_img">
       </div>
-      <div class="product-details text-center product__product-details">
-        <h4>
-          Полиуретановый грунт для отделки МДФ, белый 
-Отвердитель для полиуретановых ЛКМ
-        </h4>
-        <p>
-          Двухкомпонентный полиуретановый грунт для отделки мебели, эксплуатируемой внутри помещений. Легко шлифуется, быстро сохнет, образует идеально ровную поверхность под финишное покрытие.
-        </p>
-      </div>
-    </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-  <div class="product-card  product-card_style">
-    <div class="product-thumb text-center">
-      <img src="../images/product4.png" alt="product_img">
-    </div>
-    <div class="product-details text-center product__product-details">
-      <h4>
-        ПОЛИУРЕТАНОВЫЙ  ГРУНТ, КРЕМОВЫЙ /
-Отвердитель для полиуретановых ЛКМ
-      </h4>
-      <p>
-         </p>              
-      </div>
-  </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-  <img src="../images/product5.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-  <h4>
-    Белый полиуретановый грунт для отделки МДФ
-Отвердитель для полиуретанового грунта
-  </h4>
-  <p>
-    
-  </p>
-</div>
-</div>
-</div><div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-<img src="../images/product6.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-<h4>
-Полиуретановый грунт для отделки МДФ, белый 
-Отвердитель для полиуретановых ЛКМ
-</h4>
-<p>
-Двухкомпонентный полиуретановый грунт для отделки мебели, эксплуатируемой внутри помещений. Легко шлифуется, образует  идеально ровную поверхность под финишное покрытие.
-</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6">
-  <div class="product-card  product-card_style">
-    <div class="product-thumb text-center">
-      <img src="../images/product4.png" alt="product_img">
-    </div>
-    <div class="product-details text-center product__product-details">
-      <h4>
-        Полиуретановый прозрачный грунт 
-Отвердитель для полиуретановых ЛКМ
-      </h4>
-      <p>
-         </p>              
-      </div>
-  </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-  <img src="../images/product5.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-  <h4>
-    Полиуретановая краска для межкомнатных дверей, кремовая
-Отвердитель для ПУ краски для дверей
-  </h4>
-  <p>
-    Двухкомпонентная полиуретановая краска для отделки межкомнатных дверей с сотовым заполнением, которая отличается высокой скоростью высыхания и хорошей укрывистостью. 
-  </p>
-</div>
-</div>
-</div><div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-<img src="../images/product6.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-<h4>
-Полиуретановый грунт для отделки МДФ, белый 
-Отвердитель для полиуретановых ЛКМ
-</h4>
-<p>
-</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6">
-  <div class="product-card  product-card_style">
-    <div class="product-thumb text-center">
-      <img src="../images/product10.png" alt="product_img">
-    </div>
-    <div class="product-details text-center product__product-details">
-      <h4>
-        Акриловый матовый лак "Ultramar"
-        Отвердитель для акриловых лаков и эмалей
-      </h4>
-      <p>
-         </p>              
-      </div>
-  </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-  <img src="../images/product11.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-  <h4>
-    Нитроцеллюлозная глянцевая белая база "Dewimix"
-  </h4>
-  <p>
-    </p>
-</div>
-</div>
-</div><div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-<img src="../images/product12.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-<h4>
-Акриловый шелковисто-матовый лак
-Отвердитель для акриловых лаков / краски
-</h4>
-<p>
-</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6">
-  <div class="product-card  product-card_style">
-    <div class="product-thumb text-center">
-      <img src="../images/product15.png" alt="product_img">
-    </div>
-    <div class="product-details text-center product__product-details">
-      <h4>
-        Полиуретановая глянцевая белая база "Dewimix"
-      </h4>
-      <p>
-         </p>              
-      </div>
-  </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-  <img src="../images/product16.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-  <h4>
-    ПАТИНА (КРАСКА С ЭФФЕКТОМ СТАРЕНИЯ) 
-КОРИЧНЕВАЯ
-  </h4>
-  <p>
-    Патина - это однокомпонентная краска с эффектом старения на синтетической основе для отделки деревянных поверхностей, эксплуатируемых внутри помещений. 
-    </p>
-</div>
-</div>
-</div><div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-<img src="../images/product17.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-<h4>
-Общий отвердитель для ПУ баз колеровочной системы
-
-</h4>
-<p>
-</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6">
-  <div class="product-card  product-card_style">
-    <div class="product-thumb text-center">
-      <img src="../images/product19.png" alt="product_img">
-    </div>
-    <div class="product-details text-center product__product-details">
-      <h4>
-        Белая глянцевая эмаль на водной основе для наружных работ
-      </h4>
-      <p>
-         </p>              
-      </div>
-  </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-<div class="product-card  product-card_style">
-<div class="product-thumb text-center">
-  <img src="../images/product16.png" alt="product_img">
-</div>
-<div class="product-details text-center product__product-details">
-  <h4>
-    РАПИД ПАТИНА (БЫСТРОСОХНУЩАЯ КРАСКА С ЭФФЕКТОМ СТАРЕНИЯ) ТЕМНЫЙ ОРЕХ
-  </h4>
-  <p>
-    Патина - это однокомпонентная краска с эффектом старения на синтетической основе для отделки деревянных поверхностей, эксплуатируемых внутри помещений.      </p>
-</div>
-</div>
-</div>
-</div>
-       
-
-
-
-
-      </div>
-
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <address class="footer__address">
+          <ul class="footer__contacts">
+            <li>
+              <a href="mailto:dewilux@list.ru" target="_blank"
+                >dewilux@list.ru</a
+              >
+            </li>
+            <li><a href="tel:+79273756393">+7 (927) 375-63-93</a></li>
+          </ul>
+        </address>
+        <svg class="logo">
+          <use xlink:href="../icons/sprite.svg#logo"></use>
+        </svg>
+        <ul class="footer__list">
+          <li>
+            <a href="../pages/dropdown-company.html">о компании</a>
+          </li>
+          <li><a href="../pages/product.html">продукция</a></li>
+          <li><a href="../pages/contacts.html">контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">© 2024 ITGIRLSCHOOL</p>
+        <p class="footer__copyright-text">Изображения разработаны Freepik</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

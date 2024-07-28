@@ -52,6 +52,9 @@
 
 .product-card_style {
     margin: 40px;
+    @media (max-width:1200px) {
+        margin:15px;
+    }
 }
 
 .product__product-details h4 {
@@ -74,24 +77,23 @@
 .product__btn {
     background-color: $accent-red;
     color: #fff;
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: 300;
-    height:90px;
-    padding: 0 50px;
+    padding: 22px 50px;
+    border-radius: 15px;
     @media (max-width:900px) {
         font-size: 2.5em;
     }
 
     @media (max-width:600px) {
         font-size: 1.8em;
-        height: 75px;
-        padding: 0 30px;
+        padding: 15px 30px;
     }
 
     @media (max-width:400px) {
         font-size: 1.4em;
-        height: 65px;
-        padding: 0 25px;
+        padding: 12px 25px;
+        border-radius: 10px;
     }
   
 }
@@ -110,27 +112,58 @@
     display: inline-block;
 }
 
-.product__btn b {
-    display: inline-block;
-    padding-top: 17px;
-    @media (max-width:900px) {
-        padding-top: 21px;
-    }  
-}
-
 .product-card_style {
     background-color: #D9D9D9;
 }
 
-.advantages__box-title {
+
+.product__box-title {
     padding-bottom:30px;
+    font-size: 4em;
+    font-weight: 700;
+    color: #ff0016;
+    text-shadow: 1px 1px 2px #bebebe;
+  }
+  @media screen and (max-width: 1440px) {
+    .product__box-title {
+      font-size: 3.3em;
+      margin: 30px 20px 0px 30px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .product__box-title {
+      font-size: 3em;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .product__box-title {
+      font-size: 2.2em;
+      margin: 20px 20px 0px 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .product__box-title {
+      font-size: 2em;
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .product__box-title {
+      font-size: 1.6em;
+    }
+  }
+
+
+
+/* .product__box-title {
+    padding-bottom:30px;
+} */
+.product__product-details-main {
+    @media (max-width:991px) {
+        padding-top:25px;
+   }
 }
 
-@media (min-width:1400px) {
-    .product__product-details-main {
-        padding-top:25px;
-    }
-}
 
 .product__title {
     @media (max-width: 767px) {
@@ -138,3 +171,8 @@
         justify-content: center;
     }
 }
+
+.main__nav-padding {
+    margin-bottom: 0 !important;
+}
+
