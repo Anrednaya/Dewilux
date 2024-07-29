@@ -125,7 +125,9 @@
   .container-xl {
     padding: 0 $global-side-padding-mobile;
   }
+}
 
+@media screen and (max-width: 991px) {
   .nav-item {
     padding-top: 8px;
   }
@@ -153,7 +155,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav-item {
     padding: 15px 10px;
 
@@ -175,7 +177,7 @@
     opacity: 0;
     visibility: hidden;
 
-    transition: opacity 0.2s ease, visibility 0.2s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease, background-color 0.2s ease;
   }
 
   .dropdown:hover .dropdown-menu {
